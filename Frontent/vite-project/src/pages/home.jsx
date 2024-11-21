@@ -9,7 +9,7 @@ function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const url = "http://localhost:3000/user/profile";
+        const url = "https://login-signup-mern-api-mu.vercel.app/user/profile";
         const response = await fetch(url, {
           method: 'GET',
           headers: {
