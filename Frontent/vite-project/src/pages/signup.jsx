@@ -29,7 +29,7 @@ function Signup() {
     //  }
      
      try {
-       const url="http://localhost:3000/user/signup";
+       const url="https://login-signup-mern-api-mu.vercel.app/user/signup";
        const response=await fetch(url,{
         method: 'POST',
         headers: {
