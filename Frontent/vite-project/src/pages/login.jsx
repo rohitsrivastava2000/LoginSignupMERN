@@ -26,7 +26,9 @@ function Login() {
       })
       const result=await response.json();
       console.log(result);
-      localStorage.setItem('token',result.token);
+      if(result.success)
+       localStorage.setItem('token',result.token);
+      
       notify(result);
        if (result.success) {
         setTimeout(() => navigate("/home"), 2000); // Navigate after 2 seconds
