@@ -15,7 +15,7 @@ function Login() {
     const data={email,password};
     console.log(data);
     try {
-      const url="http://localhost:3000/user/login";
+      const url="https://login-signup-mern-api-mu.vercel.app/user/login";
       const response=await fetch(url,{
        method: 'POST',
        headers: {
